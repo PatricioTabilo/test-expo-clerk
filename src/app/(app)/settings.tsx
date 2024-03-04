@@ -8,12 +8,6 @@ export default function Settings() {
 
   const handleLogout = async () => {
     try {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const window = {
-        addEventListener: () => {
-          console.log("addEventListener");
-        },
-      };
       await signOut(
         () => {
           router.replace("/signin");
